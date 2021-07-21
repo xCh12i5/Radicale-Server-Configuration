@@ -1,0 +1,17 @@
+[server]
+hosts = 127.0.0.1:8080
+max_connections = 8
+max_content_length = 10000000
+timeout = 30
+
+[storage]
+filesystem_folder = /var/lib/radicale/collections/
+
+[auth]
+type = http_x_remote_user
+
+[web]
+type = none
+
+[logging]
+mask_passwords = True
